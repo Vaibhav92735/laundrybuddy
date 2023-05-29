@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-size: 24px;
+}
+
+header {
+
+    font-family: 'Dokdo', cursive;
+    font-size: 30px;
+    padding: 20px;
+}
+
+main {
+    margin-left: 120px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.box {
+    width: 20%;
+    float: left;
+    padding: 7px;
+    padding-left: 10px;
+    display: block;
+    overflow: hidden;
+    border-radius: 3px;
+
+}
+
+img {
+    width: 100%;
+    border-radius: 4px;
+
+}
+
+img:hover {
+    transform: scale(2, 2);
+    transition: .3s transform;
+}
+.image{
+    object-fit: cover;
+}
+.choosefile{
+    display: none;
+}

@@ -1,0 +1,30 @@
+*{
+    /* background-image: url("https://tse3.mm.bing.net/th?id=OIP.Gik4vgTQNx6-RgJgfpGaBwHaEK&pid=Api&P=0&h=180"); */
+    background-size: cover; 
+    background-color: #111;
+}
+.head{
+    /* border: 4px red solid; */
+    text-align: center;
+    color: #e33;
+    
+}
+.Details{
+    /* border: 4px red solid; */
+    margin-top: 80px;
+    text-align: center;
+    color: #e33;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+.link{
+    font-size: 30px;
+    color: #e33;
+    /* margin-bottom: 100px; */
+}
+.uu{
+    color: white;
+}
+#about{
+    font-size: 60px;
+}

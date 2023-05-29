@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Possessions</title>
+    <link rel="stylesheet" type="text/css" href="tp.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0px;
+            background-color: #222;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            font-size: 55px;
+        }
+
+        header {
+
+            font-family: 'Dokdo', cursive;
+            font-size: 30px;
+            padding: 20px;
+        }
+
+        main {
+            margin-left: 120px;
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        .box {
+            width: 20%;
+            float: left;
+            padding: 7px;
+            padding-left: 10px;
+            display: block;
+
+        }
+
+        img {
+            width: 100%;
+            border-radius: 4px;
+
+        }
+
+        img:hover {
+            transform: scale(1.3, 1.3);
+            transition: .3s transform;
+
+        }
+
+        #text {
+            color: #e11;
+        }
+
+        #para {
+            font-size: 30px;
+        }
+        .choosefile{
+            display: none;
+        }
+        .update{
+            color: #e11;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+
+            <ul>
+                <li> <a href="index.html" class="link">Home</a></li>
+                <li><a href="#about" class="link">About</a></li>
+                <li> <a href="Possessions.html" class="link">Possessions</a></li>
+                <li> <a href="missing.html" class="link">Missing</li>
+                <li> <a href="login.html" class="link">Login</a></li>
+                <li><a href="Register.html" class="link">Register</a></li>
+            </ul>
+
+        </div>
+        <h1 id="text">
+            My Clothes <p id="para">A Collection of all your Clothes</p>
+        </h1>
+        <hr />
+
+    </header>
+
+    <main>
+        <div class="box">
+            <img src="clothesicon.png" id="clothesicon" class="image">
+            <label for="input-file" class="update"> update image</label>
+            <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file" class="choosefile">
+        </div>
+        <div class="box">
+            <img src="clothesicon.png" id="clothesicon" class="image">
+            <label for="input-file" class="update"> update image</label>
+            <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file" class="choosefile">
+        </div><div class="box">
+            <img src="clothesicon.png" id="clothesicon" class="image">
+            <label for="input-file" class="update"> update image</label>
+            <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file" class="choosefile">
+        </div><div class="box">
+            <img src="clothesicon.png" id="clothesicon" class="image">
+            <label for="input-file" class="update"> update image</label>
+            <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file" class="choosefile">
+        </div><div class="box">
+            <img src="clothesicon.png" id="clothesicon" class="image">
+            <label for="input-file" class="update"> update image</label>
+            <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file" class="choosefile">
+        </div><div class="box">
+            <img src="clothesicon.png" id="clothesicon" class="image">
+            <label for="input-file" class="update"> update image</label>
+            <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file" class="choosefile">
+        </div><div class="box">
+            <img src="clothesicon.png" id="clothesicon" class="image">
+            <label for="input-file" class="update"> update image</label>
+            <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file" class="choosefile">
+        </div><div class="box">
+            <img src="clothesicon.png" id="clothesicon" class="image">
+            <label for="input-file" class="update"> update image</label>
+            <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file" class="choosefile">
+        </div>
+    </main>
+        <script>
+
+            let clothesicon = document.getElementbyId("clothesicon");
+            let inputFile = document.getElememtbyId("input-file");
+
+            inputFile.onchange = function () {
+                clothesicon.src = URL.createObjectURL(inputFile.files[0]);
+            }
+        </script>
+</body>
+
+</html>
